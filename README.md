@@ -1,12 +1,17 @@
-# React + Vite
+# Hugo Felix – Portfolio (Work in Progress)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built as the **final project** for the [Front-End Engineering course by EDIT Digital School](https://weareedit.io/formacao/?tipoId=54&areaId=82).
 
-Currently, two official plugins are available:
+The project is being developed with **React** and **Sass**, and follows a design created in Figma:  
+👉 [Figma File – Portfolio 2025](https://www.figma.com/design/NtJL01fDXNejN8RX8m3Fdq/Portfolio-2025?node-id=18-121&t=jc9QOhJejCWJaOYY-1)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚧 Work in Progress
+This portfolio is under constant development and will evolve over time.  
+For now:
+- Will start by using mock data from the Art Institute of Chicago API
+- Includes basic pages (Home, About, Projects, Project Details)
+- Will later showcase my real case studies and design work.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Later will be added to this README file...
