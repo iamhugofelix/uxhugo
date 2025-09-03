@@ -1,0 +1,27 @@
+// Colors
+$white: #ffffff;
+
+$gray-50: #F9FAFB;
+$gray-100: #F3F4F6;
+$gray-200: #E5E7EB;
+$gray-400: #9CA3AF;
+$gray-600: #4B5563;
+$gray-900: #111827;
+
+// Typography Import
+// Only keep one later on the project (Delete the other)...
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+$inter: 'Inter', system-ui, -apple-system, Roboto, Arial, sans-serif;
+$plus-jakarta-sans: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, Arial, sans-serif;
+
+// Typography Sizes
+$heading: 1.5rem;
+$text-lg: 1rem;
+$text-md: 0.875rem;
+$text-sm: 0.75rem;
+
+// Typography Weights
+$bold: 700;
+$regular: 400;
