@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+import CopyToClipboard from "../CopyToClipboard/CopyToClipboard";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 export default function HomeHero() {
@@ -18,14 +20,10 @@ export default function HomeHero() {
               </span>
             </h1>
             <p>
-              Originally from Portugal, currently designing at{" "}
-              <a href="https://prezly.com">Prezly</a>, and spending my free time{" "}
-              <a href="https://github.com/iamhugofelix">learning to code</a>.
-              Since 2015, I’ve designed for SaaS platforms, e-commerce brands,
-              and physical products.
+              Originally from Portugal, currently designing at{" "} <Link to="https://prezly.com">Prezly</Link>, and spending my free time <Link to="https://github.com/iamhugofelix">learning how to code</Link>. Since 2015, I’ve designed for SaaS platforms, e-commerce brands, and physical products.
             </p>
           </div>
-          {/* Copy email will go here */}
+          <CopyToClipboard text={'hey@uxhugo.com'} />
         </div>
       </SectionWrapper>
     </>

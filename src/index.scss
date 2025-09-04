@@ -1,5 +1,6 @@
 // Global styles
 @forward "./styles/variables";
+@forward "./styles/mixins";
 @use "./styles/reset";
 @use "./styles/globals";
 
@@ -9,3 +10,4 @@
 // Components styles
 @use "./components/SectionWrapper/SectionWrapper";
 @use "./components/HomeHero/HomeHero";
+@use "./components/CopyToClipboard/CopyToClipboard";
