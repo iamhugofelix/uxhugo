@@ -11,9 +11,5 @@
     @include text-width();
     @include flex(column, start, start);
 
-    .card-content {
-        @include flex(column, start, start);
-        gap: 3rem;
-    }
 }
 
