@@ -3,11 +3,11 @@
 
 .projects-list {
     @include flex(column, center, stretch);
-    gap: 3rem;;
+    gap: 2rem;;
 }
 
 .coming-soon {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     border-bottom: 1px dashed $gray-200;
 
     p {

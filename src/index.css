@@ -270,11 +270,11 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .coming-soon {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   border-bottom: 1px dashed #E5E7EB;
 }
 .coming-soon p {
