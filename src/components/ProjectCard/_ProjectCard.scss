@@ -1,0 +1,41 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.project-card-wrapper {
+    @include border-top-bottom();
+    @include flex(column, center, center)
+}
+
+.project-card {
+    @include card-width();
+    @include flex(column, center, start);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    gap: 1.5rem;
+    border: solid 1px $gray-200;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    background-color: $white;
+
+    &:hover {
+        box-shadow: 0 0 16px 8px rgba(16, 24, 40, 0.04);
+    }
+}
+
+.project-card-content {
+    @include flex(column, start, start);
+    gap: 0.5rem;
+
+    .project-card-metadata {
+        @include flex(row, start, start);
+        gap: 0.5rem;
+
+        span {
+            font-size: $text-md;
+        }
+    }
+}
+
+.project-card-image {
+    max-height: 20rem;
+    overflow: hidden;
+}

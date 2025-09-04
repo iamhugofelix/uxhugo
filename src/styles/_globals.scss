@@ -6,7 +6,6 @@ nav {
     margin-bottom: 2rem;
 }
 
-
 // Typography
 
 body {
@@ -14,6 +13,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;;
+
+    //DELETE LATER
+    margin-bottom: 3rem;;
 }
 
 * {
@@ -29,6 +31,9 @@ body {
 .regular {
     font-weight: $regular;
 }
+.italic {
+    font-style: italic;
+}
 .text-light {
     color: $gray-600;
 }
@@ -42,12 +47,12 @@ h1, h2, h3, h4, h5, .heading {
     line-height: 1.5;
 }
 
-p {
+p, .text-lg {
     font-size: $text-lg;
     line-height: 1.6;
 }
 
-.text-med {
+.text-md {
     font-size: $text-md;
     line-height: 1.6;
 }
@@ -66,4 +71,10 @@ a {
     &:hover{
         color: $gray-600;
     }
+}
+
+// General Layout
+.page-layout {
+    @include flex(column, center, stretch);
+    gap: 4rem;
 }

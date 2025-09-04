@@ -1,0 +1,19 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.projects-list {
+    @include flex(column, center, stretch);
+    gap: 3rem;;
+}
+
+.coming-soon {
+    padding-bottom: 3rem;
+    border-bottom: 1px dashed $gray-200;
+
+    p {
+        @include text-width();
+        text-align: center;
+        margin: auto;
+        color: $gray-400;
+    }
+}

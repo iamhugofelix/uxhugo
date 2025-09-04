@@ -2,13 +2,18 @@
 @use "../../styles/mixins" as *;
 
 .section-wrapper {
-    padding: 3rem 2rem;
-    border-top: dashed 1px $gray-200;
-    border-bottom: dashed 1px $gray-200;
+    padding: 3rem 3rem;
+    @include border-top-bottom();
     @include flex(column, center, center);
+}
 
-    .section-content {
-        max-width: 40rem;
+.section-content {
+    @include text-width();
+    @include flex(column, start, start);
+
+    .card-content {
         @include flex(column, start, start);
+        gap: 3rem;
     }
 }
+

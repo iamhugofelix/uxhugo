@@ -11,3 +11,16 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin border-top-bottom () {
+    border-top: dashed 1px $gray-200;
+    border-bottom: dashed 1px $gray-200;
+}
+
+@mixin text-width () {
+    max-width: 40rem;
+}
+
+@mixin card-width () {
+    max-width: 43rem;
+}
