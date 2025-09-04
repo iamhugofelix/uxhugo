@@ -127,11 +127,28 @@ a:hover {
 }
 
 .page-layout {
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   gap: 4rem;
+}
+.page-layout .arrows {
+  margin: auto;
+}
+
+.vertical-lines {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 43rem;
+  border-left: 1px dashed #E5E7EB;
+  border-right: 1px dashed #E5E7EB;
+  z-index: -100;
 }
 
 .section-wrapper {

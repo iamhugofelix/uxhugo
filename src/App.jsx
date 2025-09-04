@@ -8,6 +8,7 @@ import ProjectDetails from './pages/ProjectDetails';
 export default function App() {
   return (
     <BrowserRouter>
+     <div className='vertical-lines'></div>
       {/* replace this with a proper component later */}
       <nav>
         <Link to="/">Home</Link>
