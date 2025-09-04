@@ -4,7 +4,8 @@ This is my personal portfolio website, built as the **final project** for the [F
 
 👉 [**Live Preview**](https://uxhugo.vercel.app/)
 
-The project is being developed with **React** and **Sass**, and follows a design created in Figma:  
+The project is being developed with **React** and **Sass**, and follows a design created in Figma: 
+
 👉 [**Figma File**](https://www.figma.com/design/NtJL01fDXNejN8RX8m3Fdq/Portfolio-2025?node-id=18-121&t=jc9QOhJejCWJaOYY-1)
 
 ---
