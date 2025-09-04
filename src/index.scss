@@ -1,3 +1,11 @@
+// Global styles
 @forward "./styles/variables";
 @use "./styles/reset";
 @use "./styles/globals";
+
+// Page styles
+@use "./styles/pages/Home";
+
+// Components styles
+@use "./components/SectionWrapper/SectionWrapper";
+@use "./components/HomeHero/HomeHero";

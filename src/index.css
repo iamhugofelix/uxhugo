@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 /* 1. Use a more-intuitive box-sizing model */
@@ -55,10 +56,22 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
+body {
+  background: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 * {
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, Roboto, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  color: #4B5563;
 }
 
 .bold {
@@ -106,4 +119,54 @@ a {
 }
 a:hover {
   color: #4B5563;
+}
+
+.section-wrapper {
+  padding: 3rem 2rem;
+  border-top: dashed 1px #E5E7EB;
+  border-bottom: dashed 1px #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-wrapper .section-content {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.hero-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+
+.avatar {
+  width: 3.5rem;
+  border: solid 2px #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 4, 0.04);
+  rotate: -2deg;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">❤️</text></svg>') 16 16, auto;
+  transition: all 0.2s ease-in-out;
+}
+.avatar img {
+  width: 100%;
+}
+.avatar:hover {
+  transform: scale(1.04);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }/*# sourceMappingURL=index.css.map */

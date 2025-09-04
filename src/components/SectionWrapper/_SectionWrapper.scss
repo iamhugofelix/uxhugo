@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+@use '../../styles/mixins' as *;
+
+.section-wrapper {
+    padding: 3rem 2rem;
+    border-top: dashed 1px $gray-200;
+    border-bottom: dashed 1px $gray-200;
+    @include flex(column, center, center);
+
+    .section-content {
+        max-width: 40rem;
+        @include flex(column, start, start);
+    }
+}
