@@ -2,7 +2,7 @@
 
 This is my personal portfolio website, built as the **final project** for the [Front-End Engineering course by EDIT Digital School](https://weareedit.io/formacao/?tipoId=54&areaId=82).
 
-👉 **Live Preview:** [Live Preview](https://iamhugofelix.github.io/uxhugo/)
+👉 [**Live Preview:**](https://iamhugofelix.github.io/uxhugo/)
 
 The project is being developed with **React** and **Sass**, and follows a design created in Figma:  
 👉 [Figma File – Portfolio 2025](https://www.figma.com/design/NtJL01fDXNejN8RX8m3Fdq/Portfolio-2025?node-id=18-121&t=jc9QOhJejCWJaOYY-1)
