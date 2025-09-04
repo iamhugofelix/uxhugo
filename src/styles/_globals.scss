@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+// Typography
+
+* {
+    font-family: $plus-jakarta-sans;
+    font-weight: $regular;
+    font-size: $text-lg;
+}
+
+.bold {
+    font-weight: $bold;
+}
+.regular {
+    font-weight: $regular;
+}
+.text-light {
+    color: $gray-600;
+}
+.text-dark {
+    color: $gray-900;
+}
+
+h1, h2, h3, h4, h5, .heading {
+    font-size: $heading;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: $text-lg;
+    line-height: 1.6;
+}
+
+.text-med {
+    font-size: $text-md;
+    line-height: 1.6;
+}
+
+.text-sm {
+    font-size: $text-sm;
+    line-height: 1.6;
+}
+
+a {
+    color: $gray-900;
+    font-weight: $bold;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        color: $gray-600;
+    }
+}
+
