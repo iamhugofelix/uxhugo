@@ -19,7 +19,7 @@ body {
 }
 
 * {
-    font-family: $plus-jakarta-sans;
+    font-family: $system;
     font-weight: $regular;
     font-size: $text-lg;
     color: $gray-600;
@@ -41,9 +41,14 @@ body {
     color: $gray-900;
 }
 
-h1, h2, h3, h4, h5, .heading {
+h1, .heading {
     font-size: $heading;
     letter-spacing: -0.5px;
+    line-height: 1.5;
+}
+
+h2, h3, h4, h5, .heading-sm {
+    font-size: $heading-sm;
     line-height: 1.5;
 }
 

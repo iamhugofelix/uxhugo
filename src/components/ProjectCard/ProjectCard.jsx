@@ -10,7 +10,7 @@ export default function ProjectCard({title, year, type, img, url}) {
             <span>&middot;</span>
             <span>{type}</span>
           </div>
-          <h2 className="text-lg bold text-dark">{title}</h2>
+          <h2 className="bold text-dark">{title}</h2>
         </div>
         <div className="project-card-image">
           <img src={`${img}`} alt={title} />
