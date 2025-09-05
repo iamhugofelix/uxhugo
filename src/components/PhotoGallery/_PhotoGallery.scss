@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.photo-gallery {
+    @include flex(row, center, center);
+    width: 100%;
+    max-width: 46rem;
+    margin: auto;
+}

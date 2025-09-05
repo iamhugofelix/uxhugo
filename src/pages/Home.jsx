@@ -1,4 +1,5 @@
 import HomeHero from "../components/HomeHero/HomeHero";
+import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import ProjectsList from "../components/ProjectsList/ProjectsList";
 
 export default function Home() {
@@ -35,6 +36,12 @@ export default function Home() {
             strokeLinecap="round"
           />
         </svg>
+        <PhotoGallery
+          firstImage={"/images/test-1.jpg"}
+          secondImage={"/images/test-2.jpg"}
+          thirdImage={"/images/test-3.jpg"}
+          fourthImage={"/images/test-4.jpg"}
+        />
       </div>
     </>
   );
