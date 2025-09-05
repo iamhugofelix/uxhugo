@@ -1,13 +1,7 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-//Temporary REMOVE LATER
-nav {
-    margin-bottom: 2rem;
-}
-
 // Typography
-
 body {
     background: $gray-50;
     display: flex;
@@ -80,7 +74,7 @@ a {
 
 // General Layout
 .page-layout {
-    padding-top: 4rem;
+    padding-top: 6rem;
     @include flex(column, center, stretch);
     gap: 4rem;
 

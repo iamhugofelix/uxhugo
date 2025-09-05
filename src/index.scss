@@ -8,6 +8,7 @@
 @use "./styles/pages/Home";
 
 // Components styles
+@use "./components/NavBar/NavBar";
 @use "./components/SectionWrapper/SectionWrapper";
 @use "./components/HomeHero/HomeHero";
 @use "./components/CopyToClipboard/CopyToClipboard";

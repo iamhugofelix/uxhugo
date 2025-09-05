@@ -56,10 +56,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-nav {
-  margin-bottom: 2rem;
-}
-
 body {
   background: #F9FAFB;
   display: flex;
@@ -76,7 +72,7 @@ body {
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .regular {
@@ -123,7 +119,7 @@ p, .text-lg {
 
 a {
   color: #111827;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
 }
@@ -132,7 +128,7 @@ a:hover {
 }
 
 .page-layout {
-  padding-top: 4rem;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,6 +150,26 @@ a:hover {
   border-left: 1px dashed #E5E7EB;
   border-right: 1px dashed #E5E7EB;
   z-index: -100;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: solid 1px #E5E7EB;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.04), 0 2px 2px 0 rgba(255, 255, 255, 0) inset;
+}
+.nav-bar a {
+  font-size: 0.875rem;
 }
 
 .section-wrapper {

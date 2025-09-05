@@ -4,17 +4,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
+import NavBar from './components/NavBar/NavBar';
 
 export default function App() {
   return (
     <BrowserRouter>
      <div className='vertical-lines'></div>
-      {/* replace this with a proper component later */}
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-      </nav>
+      <NavBar />
       
       <Routes>
         <Route path="/" element={<Home />} />
