@@ -152,6 +152,37 @@ a:hover {
   z-index: -100;
 }
 
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border: solid 1px #E5E7EB;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(36, 41, 47, 0.08);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.btn svg {
+  height: 1rem;
+}
+.btn-icon-only {
+  width: 2.5rem;
+  padding: 0;
+}
+.btn-icon-only svg {
+  height: 1.25rem;
+}
+.btn:hover {
+  background-color: #F9FAFB;
+  color: #111827;
+}
+
 .nav-bar {
   position: absolute;
   top: 1.75rem;
@@ -166,7 +197,8 @@ a:hover {
   background: #ffffff;
   border: solid 1px #E5E7EB;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.04), 0 2px 2px 0 rgba(255, 255, 255, 0) inset;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(36, 41, 47, 0.08);
 }
 .nav-bar a {
   font-size: 0.875rem;
@@ -233,7 +265,8 @@ a:hover {
   background: #ffffff;
   border: solid 1px #E5E7EB;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.04), 0 2px 2px 0 rgba(255, 255, 255, 0) inset;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(36, 41, 47, 0.08);
 }
 .copy-button a, .copy-button span {
   font-size: 0.875rem;
@@ -355,5 +388,28 @@ a:hover {
   justify-content: center;
   align-items: center;
   max-width: 40rem;
+  gap: 1rem;
+}
+
+.read-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 43rem;
+  width: 100%;
+  margin: auto;
+  padding-top: 6rem;
+  margin-top: -6rem;
+  background: linear-gradient(to top, #F9FAFB 24%, transparent 100%);
+  z-index: 10;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
   gap: 1rem;
 }/*# sourceMappingURL=index.css.map */

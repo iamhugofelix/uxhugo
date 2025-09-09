@@ -1,6 +1,7 @@
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import { Link } from "react-router";
+import Button from "../Button/Button";
 
 export default function HomeAbout () {
   return (
@@ -37,9 +38,9 @@ export default function HomeAbout () {
           out.
         </p>
       </div>
-      <Link to={'/about'}>
-      Read more
-      </Link>
+      <div className="read-more">
+        <Button to={"/about"} label={"Read more"} />
+      </div>
     </SectionWrapper>
   );
 }

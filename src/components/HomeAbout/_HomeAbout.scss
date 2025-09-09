@@ -13,3 +13,14 @@
     @include text-width();
     gap: 1rem;
 }
+
+.read-more {
+    @include flex(column, center, center);
+    @include card-width();
+    width: 100%;
+    margin: auto;
+    padding-top: 6rem;
+    margin-top: -6rem;
+    background: linear-gradient(to top, $gray-50 24%, transparent 100%);
+    z-index: 10;
+}

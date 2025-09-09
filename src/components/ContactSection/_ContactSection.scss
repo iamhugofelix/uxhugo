@@ -1,0 +1,8 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.contact-actions {
+    @include flex(row, start, center);
+    width: 100%;
+    gap: 1rem;
+}

@@ -6,6 +6,7 @@
 
 
 // Components styles
+@use "./components/Button/Button";
 @use "./components/NavBar/NavBar";
 @use "./components/SectionWrapper/SectionWrapper";
 @use "./components/HomeHero/HomeHero";
@@ -15,3 +16,4 @@
 @use "./components/PhotoCard/PhotoCard";
 @use "./components/PhotoGallery/PhotoGallery";
 @use "./components/HomeAbout/HomeAbout";
+@use "./components/ContactSection/ContactSection";
