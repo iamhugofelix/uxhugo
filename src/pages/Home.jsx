@@ -1,5 +1,5 @@
 
-import HomeAbout from "../components/HomeAbout/Homeabout";
+import HomeAbout from "../components/HomeAbout/HomeAbout";
 import HomeHero from "../components/HomeHero/HomeHero";
 import ProjectsList from "../components/ProjectsList/ProjectsList";
 
