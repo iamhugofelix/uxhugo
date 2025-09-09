@@ -1,6 +1,16 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+.contact-section {
+    @include flex(column, start, start);
+    gap: 2rem;
+}
+
+.contact-content {
+    @include flex();
+    gap: 1rem;
+}
+
 .contact-actions {
     @include flex(row, start, center);
     width: 100%;

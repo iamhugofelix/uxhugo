@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.footer-wrapper {
+    @include text-width();
+    width: 100%;
+    margin: auto;
+    @include flex(column, center, center);
+    gap: 2rem;
+}
+
+.footer-content {
+    @include flex(row, center, center);
+    gap: 0.5rem;
+    
+    span, a {
+        font-size: $text-md;
+    }
+}
+
+.footer-copyright {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    span {
+        font-size: $text-sm;
+        text-align: center;
+    }
+
+}

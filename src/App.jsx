@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:title" element={<ProjectDetails />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }

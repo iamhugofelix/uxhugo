@@ -1,5 +1,6 @@
 
 import ContactSection from "../components/ContactSection/ContactSection";
+import Footer from "../components/Footer/Footer";
 import HomeAbout from "../components/HomeAbout/HomeAbout";
 import HomeHero from "../components/HomeHero/HomeHero";
 import ProjectsList from "../components/ProjectsList/ProjectsList";

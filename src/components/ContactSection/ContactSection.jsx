@@ -5,8 +5,8 @@ import CopyToClipboard from "../CopyToClipboard/CopyToClipboard";
 export default function ContactSection () {
   return (
     <SectionWrapper>
-      <div className="hero-home">
-        <div className="hero-content">
+      <div className="contact-section">
+        <div className="contact-content">
           <h1 className="bold text-dark">
             I’m Hugo, a digital product designer, curious builder, and
             occasional front-end dabbler.{" "}

@@ -8,8 +8,6 @@ body {
     flex-direction: column;
     gap: 2rem;;
 
-    //DELETE LATER
-    margin-bottom: 3rem;;
 }
 
 * {
@@ -75,6 +73,7 @@ a {
 // General Layout
 .page-layout {
     padding-top: 6rem;
+    padding-bottom: 6rem;
     @include flex(column, center, stretch);
     gap: 4rem;
 

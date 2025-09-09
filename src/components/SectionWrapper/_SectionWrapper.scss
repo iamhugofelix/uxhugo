@@ -9,6 +9,6 @@
 
 .section-content {
     @include text-width();
-    @include flex(column, start, start);
+    @include flex(column, center, center);
 }
 
