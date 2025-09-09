@@ -1,9 +1,6 @@
 import { Link } from "react-router";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import CopyToClipboard from "../CopyToClipboard/CopyToClipboard";
-import Button from "../Button/Button";
-import { Github, Linkedin, LinkedinIcon } from "lucide-react";
-import { SocialIcon } from "react-social-icons";
 
 export default function ContactSection () {
   return (
