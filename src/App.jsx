@@ -6,13 +6,15 @@ import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 export default function App() {
   return (
     <BrowserRouter>
-     <div className='vertical-lines'></div>
+      <ScrollToTop />
+      <div className="vertical-lines"></div>
       <NavBar />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

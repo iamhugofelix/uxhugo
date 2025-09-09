@@ -82,6 +82,16 @@ a {
     }
 }
 
+.about-page {
+    gap: 0;
+
+    .arrows {
+        margin: 4rem auto;
+    }
+}
+
+
+
 .vertical-lines {
   position: fixed;
   top: 0;
@@ -94,4 +104,10 @@ a {
   border-left: 1px dashed $gray-200;
   border-right: 1px dashed $gray-200;
   z-index: -100;
+}
+
+.callout {
+    padding: 2em 0;
+    @include flex(column, center, stretch);
+    gap: 1rem;
 }
