@@ -317,9 +317,10 @@ a:hover {
 
 .photo-card {
   background: #ffffff;
-  width: 300px;
+  width: 20rem;
   border: solid 1px #E5E7EB;
-  padding: 0.75rem 0.75rem 2rem 0.75rem;
+  padding: 0.75rem 0.75rem 2.5rem 0.75rem;
+  cursor: pointer;
 }
 .photo-card img {
   width: 100%;
@@ -336,4 +337,23 @@ a:hover {
   width: 100%;
   max-width: 46rem;
   margin: auto;
+}
+
+.home-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+  gap: 1rem;
 }/*# sourceMappingURL=index.css.map */

@@ -4,8 +4,6 @@
 @use "./styles/reset";
 @use "./styles/globals";
 
-// Page styles
-@use "./styles/pages/Home";
 
 // Components styles
 @use "./components/NavBar/NavBar";
@@ -16,3 +14,4 @@
 @use "./components/ProjectsList/ProjectsList";
 @use "./components/PhotoCard/PhotoCard";
 @use "./components/PhotoGallery/PhotoGallery";
+@use "./components/HomeAbout/HomeAbout";

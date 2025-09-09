@@ -1,14 +1,15 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.section-wrapper {
-    padding: 3rem 3rem;
-    @include border-top-bottom();
+.home-about {
     @include flex(column, center, center);
+    gap: 2rem;
+    margin: auto;
+    width: 100%;
 }
 
-.section-content {
+.about-content {
+    @include flex();
     @include text-width();
-    @include flex(column, start, start);
+    gap: 1rem;
 }
-
