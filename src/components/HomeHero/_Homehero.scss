@@ -4,6 +4,7 @@
 .hero-home {
     @include flex(column, start, start);
     gap: 2rem;
+    padding: 3rem;
 }
 
 .avatar {

@@ -5,7 +5,6 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 export default function HomeHero() {
   return (
     <>
-      <SectionWrapper>
         <div className="hero-home">
           <div className="avatar">
             <img src="./images/hugo.jpg" alt="#" />
@@ -25,7 +24,6 @@ export default function HomeHero() {
           </div>
           <CopyToClipboard text={'hey@uxhugo.com'} />
         </div>
-      </SectionWrapper>
     </>
   );
 }

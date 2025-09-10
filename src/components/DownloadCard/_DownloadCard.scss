@@ -2,7 +2,6 @@
 @use "../../styles/mixins" as *;
 
 .download-card-wrapper {
-    @include border-top-bottom();
     @include flex(column, center, center);
 }
 

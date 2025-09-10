@@ -12,8 +12,11 @@
     align-items: $align;
 }
 
-@mixin border-top-bottom () {
+@mixin border-top() {
     border-top: dashed 1px $gray-200;
+}
+
+@mixin border-bottom() {
     border-bottom: dashed 1px $gray-200;
 }
 

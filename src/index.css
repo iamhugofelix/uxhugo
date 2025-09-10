@@ -133,17 +133,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  gap: 4rem;
 }
 .page-layout .arrows {
   margin: auto;
-}
-
-.about-page {
-  gap: 0;
-}
-.about-page .arrows {
-  margin: 4rem auto;
 }
 
 .vertical-lines {
@@ -221,24 +213,34 @@ a:hover {
 }
 
 .section-wrapper {
-  padding: 3rem 3rem;
-  border-top: dashed 1px #E5E7EB;
-  border-bottom: dashed 1px #E5E7EB;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.top-border {
+  border-top: dashed 1px #E5E7EB;
+}
+
+.bottom-border {
+  border-bottom: dashed 1px #E5E7EB;
+}
+
 .section-content {
-  max-width: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  max-width: 43rem;
+  margin: auto;
 }
 .section-content p {
   width: 100%;
+}
+
+.add-padding {
+  padding: 3rem;
 }
 
 .hero-home {
@@ -247,6 +249,7 @@ a:hover {
   justify-content: start;
   align-items: start;
   gap: 2rem;
+  padding: 3rem;
 }
 
 .avatar {
@@ -300,8 +303,6 @@ a:hover {
 }
 
 .project-card-wrapper {
-  border-top: dashed 1px #E5E7EB;
-  border-bottom: dashed 1px #E5E7EB;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +310,6 @@ a:hover {
 }
 
 .project-card {
-  max-width: 43rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,7 +357,7 @@ a:hover {
 }
 
 .coming-soon {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem !important;
   border-bottom: 1px dashed #E5E7EB;
 }
 .coming-soon p {
@@ -399,6 +399,7 @@ a:hover {
   gap: 2rem;
   margin: auto;
   width: 100%;
+  padding: 3rem;
 }
 
 .about-content {
@@ -430,6 +431,7 @@ a:hover {
   justify-content: start;
   align-items: start;
   gap: 2rem;
+  padding: 3rem;
 }
 
 .contact-content {
@@ -481,8 +483,6 @@ a:hover {
 }
 
 .download-card-wrapper {
-  border-top: dashed 1px #E5E7EB;
-  border-bottom: dashed 1px #E5E7EB;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,7 +507,7 @@ a:hover {
 }
 
 .footer-wrapper {
-  max-width: 40rem;
+  max-width: 43rem;
   width: 100%;
   margin: auto;
   display: flex;

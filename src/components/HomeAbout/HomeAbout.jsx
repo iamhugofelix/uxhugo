@@ -5,7 +5,6 @@ import Button from "../Button/Button";
 
 export default function HomeAbout () {
   return (
-    <SectionWrapper>
       <div className="home-about">
         <div className="about-content">
           <h1 className="bold text-dark">
@@ -37,11 +36,10 @@ export default function HomeAbout () {
           quickly I realized I cared more about pixels than pieces, so I dropped
           out.
         </p>
+        <div className="read-more">
+          <Button to={"/about"} label={"Read more"} />
+        </div>
       </div>
-      <div className="read-more">
-        <Button to={"/about"} label={"Read more"} />
-      </div>
-    </SectionWrapper>
   );
 }
 

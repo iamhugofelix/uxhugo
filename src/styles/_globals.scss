@@ -75,18 +75,9 @@ a {
     padding-top: 6rem;
     padding-bottom: 6rem;
     @include flex(column, center, stretch);
-    gap: 4rem;
 
     .arrows {
         margin: auto;
-    }
-}
-
-.about-page {
-    gap: 0;
-
-    .arrows {
-        margin: 4rem auto;
     }
 }
 

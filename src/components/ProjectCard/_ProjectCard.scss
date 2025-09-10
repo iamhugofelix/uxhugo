@@ -2,12 +2,10 @@
 @use "../../styles/mixins" as *;
 
 .project-card-wrapper {
-    @include border-top-bottom();
     @include flex(column, center, center)
 }
 
 .project-card {
-    @include card-width();
     @include flex(column, center, start);
     padding: 1.5rem 1.5rem 0 1.5rem;
     gap: 1.5rem;

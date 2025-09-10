@@ -2,7 +2,7 @@
 @use "../../styles/mixins" as *;
 
 .footer-wrapper {
-    @include text-width();
+    @include card-width();
     width: 100%;
     margin: auto;
     @include flex(column, center, center);

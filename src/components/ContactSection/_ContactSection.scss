@@ -4,6 +4,7 @@
 .contact-section {
     @include flex(column, start, start);
     gap: 2rem;
+    padding: 3rem;
 }
 
 .contact-content {
