@@ -28,3 +28,11 @@
     }
     
 }
+
+.work-position {
+    @include flex(row, center, center);
+
+    svg {
+        height: 16px;
+    }
+}

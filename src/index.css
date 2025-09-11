@@ -517,6 +517,16 @@ a:hover {
   padding-bottom: 0;
 }
 
+.work-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.work-position svg {
+  height: 16px;
+}
+
 .download-card-wrapper {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
+import { ArrowUpRight } from "lucide-react";
 
 const jobs = [
   {
@@ -23,7 +24,7 @@ const jobs = [
   {
     position: "Founder & Product Owner",
     year: "2015 to 2020",
-    company: "EzyCities/Workshoped",
+    company: "EzyCities / Workshoped",
     url: "https://workshoped.com",
   },
 ];
@@ -39,8 +40,16 @@ export default function WorkAccordion () {
             <span>&middot;</span>
             <span className="text-lg">{job.year}</span>
             <span>&middot;</span>
-            <Link to={job.url} target="_blank" rel="noopener noreferrer" className="text-lg regular">{job.company}</Link>
-          </div>
+              <Link
+                to={job.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg regular work-position"
+              >
+                {job.company}
+                <ArrowUpRight />
+              </Link>
+            </div>
         );
       })}
     </div>
