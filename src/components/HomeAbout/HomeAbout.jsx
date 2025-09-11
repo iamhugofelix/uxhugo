@@ -79,7 +79,7 @@ export default function HomeAbout () {
           </SectionWrapper>
 
           <SectionWrapper topBorder={true}>
-            <div className="about-content">
+            <div className="about-content callout">
               <p className="title text-dark bold ">Work Experience</p>
               <p>
                 A zig-zag journey through design, tech, and code — here’s the
@@ -107,7 +107,7 @@ export default function HomeAbout () {
           </SectionWrapper>
 
           <SectionWrapper topBorder={true}>
-            <div className="about-content">
+            <div className="about-content callout">
               <p className="title text-dark bold ">Education</p>
               <p>
                 A zig-zag journey through design, tech, and code — here’s the

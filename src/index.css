@@ -454,6 +454,12 @@ a:hover {
   gap: 1rem;
 }
 
+.callout {
+  background-color: #ffffff;
+  border: solid 1px #E5E7EB;
+  margin: -1px 0;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -530,9 +536,6 @@ a:hover {
   margin-top: -1px;
   margin-bottom: -1px;
   background-color: #ffffff;
-}
-.download-card .btn {
-  margin-top: 1rem;
 }
 
 .footer-wrapper {

@@ -36,7 +36,7 @@
     padding: 3rem;
 }
 
-// Adds a special padding to the bottom photo gallery
+// Adds a special padding
 .expanded-bottom{
     padding-bottom: 0;
 }
@@ -48,4 +48,10 @@
 .gap-1rem {
     @include flex(column, center, center);
     gap: 1rem;;
+}
+
+.callout {
+    background-color: $white;
+    border: solid 1px $gray-200;
+    margin: -1px 0;
 }
