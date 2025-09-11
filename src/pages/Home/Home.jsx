@@ -1,4 +1,4 @@
-import HomeAbout from "../../components/HomeAbout/Homeabout";
+import HomeAbout from "../../components/HomeAbout/HomeAbout";
 import ProjectsList from "../../components/ProjectsList/ProjectsList";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import HomeHero from "../../components/HomeHero/HomeHero";
