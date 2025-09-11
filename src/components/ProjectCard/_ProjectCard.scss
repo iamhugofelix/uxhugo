@@ -24,6 +24,7 @@
     @include flex(column, start, start);
     gap: 0.5rem;
     width: 100%;
+    order: 1;
 
     .project-card-metadata {
         @include flex(row, start, start);
@@ -40,6 +41,7 @@
     overflow: hidden;
     width: 100%;
     background-color: $gray-200;
+    order: 2;
 
     img {
         object-fit: cover;
@@ -60,7 +62,12 @@
         padding: 0;
     }
 
+    .project-card-image {
+        order: 1;
+    }
+
     .project-card-content {
-        padding: 1.5rem 1.5rem 0 1.5rem;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        order: 2;
     }
 }

@@ -502,6 +502,7 @@ a:hover {
   align-items: start;
   gap: 0.5rem;
   width: 100%;
+  order: 1;
 }
 .project-card-content .project-card-metadata {
   display: flex;
@@ -519,6 +520,7 @@ a:hover {
   overflow: hidden;
   width: 100%;
   background-color: #E5E7EB;
+  order: 2;
 }
 .project-card-image img {
   -o-object-fit: cover;
@@ -537,8 +539,12 @@ a:hover {
   .project-card {
     padding: 0;
   }
+  .project-card-image {
+    order: 1;
+  }
   .project-card-content {
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    order: 2;
   }
 }
 .projects-list {
