@@ -7,3 +7,10 @@
     max-width: 46rem;
     margin: auto;
 }
+
+@media (max-width: 800px) {
+    .photo-gallery {
+        @include flex(row, center, center);
+        padding: 1rem;
+    }
+}

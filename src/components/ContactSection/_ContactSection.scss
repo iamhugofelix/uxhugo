@@ -16,4 +16,19 @@
     @include flex(row, start, center);
     width: 100%;
     gap: 1rem;
+
+    .social-links {
+       @include flex(row, start, center);
+       gap: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact-actions {
+        flex-wrap: wrap;
+}
 }

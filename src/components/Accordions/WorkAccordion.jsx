@@ -36,10 +36,12 @@ export default function WorkAccordion () {
       {jobs.map((job) => {
         return (
           <div className="accordion-content" key={job.company}>
-            <h3 className="text-lg text-dark">{job.position}</h3>
-            <span>&middot;</span>
-            <span className="text-lg">{job.year}</span>
-            <span>&middot;</span>
+            <div className="main-info">  
+              <h3 className="text-lg text-dark">{job.position}</h3>
+              <span>&middot;</span>
+              <span className="text-lg">{job.year}</span>
+            </div>
+            <span className="mobile-hide">&middot;</span>
               <Link
                 to={job.url}
                 target="_blank"

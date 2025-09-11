@@ -3,7 +3,9 @@ export default function PhotoCard ({img, alt}) {
 
   return (
     <div className="photo-card">
+      <div className="card-image">
         <img src={img} alt={alt} />
+      </div>
     </div>
   );
 }

@@ -8,11 +8,19 @@
 .download-card {
     @include card-width();
     @include flex(column, center, start);
-    padding: 2rem;
+    padding: 3rem;
     gap: 1rem;
     border: solid 1px $gray-200;
     margin-top: -1px;
     margin-bottom: -1px;
     background-color: $white;
 
+}
+
+@media (max-width: 800px) {
+    .download-card {
+        padding: 3rem 1.5rem;
+        border-right: none;
+        border-left: none;
+    }
 }

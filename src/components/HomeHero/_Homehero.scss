@@ -31,3 +31,9 @@
     @include flex();
     gap: 1rem;
 }
+
+@media (max-width: 800px) {
+    .hero-home {
+        padding: 3rem 1.5rem;
+    }
+}

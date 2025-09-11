@@ -49,3 +49,18 @@
         display: block;
     }
 }
+
+@media (max-width: 800px) {
+
+    .project-card-wrapper {
+        padding: 1.5rem;
+    }
+
+    .project-card  {
+        padding: 0;
+    }
+
+    .project-card-content {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+}

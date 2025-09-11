@@ -6,8 +6,6 @@ export default function Footer () {
     <>
       <div className="footer-wrapper">
         <svg
-          width="84"
-          height="65"
           viewBox="0 0 84 65"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -25,12 +23,12 @@ export default function Footer () {
           <span>
             Designed in <Link to={"https://figma.com"}>Figma</Link>
           </span>
-          <span>&middot;</span>
+          <span className="mobile-hide">&middot;</span>
           <span>
             Built in{" "}
             <Link to={"https://github.com/iamhugofelix/uxhugo"}>React</Link>
           </span>
-          <span>&middot;</span>
+          <span className="mobile-hide">&middot;</span>
           <span>
             Hosted at <Link to={"https://vercel.com"}>Vercel</Link>
           </span>

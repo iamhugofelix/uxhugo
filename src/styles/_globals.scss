@@ -97,8 +97,14 @@ a {
   z-index: -100;
 }
 
-.callout {
-    padding: 2em 0;
-    @include flex(column, center, stretch);
-    gap: 1rem;
+@media (max-width: 800px) {
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .vertical-lines {
+        display: none;
+    }
+
 }

@@ -14,10 +14,18 @@
 
 @mixin border-top() {
     border-top: dashed 1px $gray-200;
+
+    @media (max-width: 800px) {
+        border: none;
+    }
 }
 
 @mixin border-bottom() {
     border-bottom: dashed 1px $gray-200;
+
+    @media (max-width: 800px) {
+        border: none;
+    }
 }
 
 @mixin text-width () {

@@ -87,3 +87,21 @@
         padding-top: 1rem;;
     }
 }
+
+@media (max-width: 800px) {
+
+    .project-header {
+        padding: 3rem 1.5rem;
+    }
+
+    .project-user {
+        padding: 1.5rem;
+        border-right: none;
+        border-left: none;
+
+        .user-actions{
+            flex-wrap: wrap;
+        }
+    }
+
+}

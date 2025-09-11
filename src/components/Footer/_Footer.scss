@@ -7,6 +7,12 @@
     margin: auto;
     @include flex(column, center, center);
     gap: 2rem;
+    padding: 3rem;
+
+    svg {
+        width: 100%;
+        max-width:8rem;
+    }
 }
 
 .footer-content {
@@ -20,11 +26,27 @@
 
 .footer-copyright {
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    font-size: $text-sm;
+    text-align: center;
 
     span {
         font-size: $text-sm;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .footer-copyright {
         text-align: center;
     }
+
+    .footer-content {
+    @include flex(column, center, center);
+    gap: 0.5rem;
+    
+    span, a {
+        font-size: $text-md;
+    }
+}
 
 }
