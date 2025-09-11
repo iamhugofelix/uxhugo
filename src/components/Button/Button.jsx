@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-export default function Button ({label, icon, to}) {
+export default function Button ({label, icon, to, isExternal = false}) {
   return (
     <Link
       to={to}

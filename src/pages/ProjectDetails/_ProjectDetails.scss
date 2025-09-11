@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.project-header, .project-body {
+.project-header {
     @include flex(column, start, stretch);
     padding: 3rem;
     gap: 1rem;
@@ -9,6 +9,11 @@
     .project-metadata {
         @include flex(row, start, stretch);
         gap: 0.5rem;
+
+        span {
+            @include flex(row, start, stretch);
+            gap: 0.5rem;
+        }
     }
 
     .project-title {
@@ -26,5 +31,59 @@
         width: 100%;
         height: 100%;
         display: block;
+    }
+}
+
+.project-user{
+    @include flex(column, start, stretch);
+    padding: 3rem;
+    gap: 1.5rem;
+    background-color: $white;
+    border: solid 1px $gray-200;
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+
+    .user-info {
+        @include flex(row, space-between, center);
+
+        .user-details {
+            @include flex(row, start, center);
+            gap: 0.75rem;
+            
+            .user-image {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+            }
+        }
+
+    }
+
+    .user-extra-details {
+        @include flex(column, start, start);
+        gap: 1rem;
+
+        .user-analytics {
+            @include flex(row, start, center);
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            .data-item {
+                @include flex(row, start, center);
+                gap: 0.25rem;
+    
+                svg {
+                    width: 1rem;
+                }
+            }
+        }
+
+    }
+
+    .user-actions{
+        @include flex(row, start, start);
+        gap: 1rem;
+        padding-top: 1rem;;
     }
 }

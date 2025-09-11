@@ -1,37 +1,142 @@
+import { useParams } from "react-router";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
-import { fetchArtwork } from "../../services/fetchArtwork";
-
-fetchArtwork();
+import { fetchPhotoDetails } from "../../services/fetchPhotos";
+import { useEffect, useState } from "react";
+import { Album, Camera, Loader, ThumbsUp } from "lucide-react";
+import Button from "../../components/Button/Button";
+import { IconBrandInstagram, IconBrandX } from "@tabler/icons-react";
 
 export default function ProjectDetails() {
+  const {id} = useParams()
+  const [image, setImage] = useState(null);
+
+  useEffect(() => {
+    const getPhotos = async () => {
+      const photos = await fetchPhotoDetails(id);
+      setImage(photos);
+    };
+    getPhotos();
+  }, []);
+
+  if (!image) {
+    return (
+      <div>
+        <p>Loading...</p>
+        <Loader />
+      </div>
+    )
+  }
+  
+  console.log(image);
+
   return (
     <div className="page-layout">
       <SectionWrapper topBorder={true}>
         <div className="project-header">
           <div className="project-metadata">
-            <span>2025</span>
-            <span>&middot;</span>
-            <span>Case Study</span>
-            <span>&middot;</span>
-            <span>10 min read</span>
+            <span>{image.created_at.slice(0, 4)}</span>
+            <span>
+              <span>&middot;</span>
+              {image.user.name.length > 4
+                ? image.user.name
+                : image.user.username}
+            </span>
+            {image.exif.name && (
+              <span>
+                <span>&middot;</span>
+                {image.exif.name
+                  .toLowerCase()
+                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+              </span>
+            )}
           </div>
           <div className="project-title">
-            <h1 className="text-dark bold">This is the project title</h1>
-            <p>This is the description</p>
+            <h1 className="text-dark bold">
+              {image.alt_description || "Untitled Photo"}
+            </h1>
+            <p>{image.location.name || "Unknown Location"}</p>
           </div>
         </div>
       </SectionWrapper>
 
       <SectionWrapper topBorder={true} bottomBorder={true}>
         <div className="project-featured-image">
-          <img src="public/images/test-3.jpg" alt="" />
+          <img
+            src={image.urls.regular}
+            alt={image.alt_description || "Untitled Photo"}
+          />
         </div>
       </SectionWrapper>
 
       <SectionWrapper topBorder={true} bottomBorder={true}>
-        <div className="project-body">
-          <p>This is the body content...</p>
+        <div className="project-user">
+          <h2 className="headings text-dark bold">
+            Author
+          </h2>
+          <div className="user-info">
+            <div className="user-details">
+              <div className="user-image">
+                <img
+                  src={image.user.profile_image.medium}
+                  alt={image.user.name}
+                />
+              </div>
+              <div className="user-name">
+                <p className="text-md text-dark bold">
+                  {image.user.name.length > 4
+                    ? image.user.name
+                    : image.user.username}
+                </p>
+                <p className="text-md">{image.user.location}</p>
+              </div>
+            </div>
+          </div>
+          <div className="user-extra-details">
+            {image.user.bio && <p>{image.user.bio}</p>}
+            <div className="user-analytics">
+              <div className="data-item">
+                <ThumbsUp />
+                <span>{image.user.total_likes}</span>
+              </div>
+              <div className="data-item">
+                <Camera />
+                <span>
+                  {image.user.total_photos || image.user.illustrations}
+                </span>
+              </div>
+              <div className="data-item">
+                <Album />
+                <span>{image.user.total_collections}</span>
+              </div>
+              {image.user.twitter_username && (
+                <div className="data-item">
+                  <IconBrandX />
+                  <a href={`https://x.com/${image.user.twitter_username}`}>
+                    {`@${image.user.twitter_username}`}
+                  </a>
+                </div>
+              )}
+              {image.user.instagram_username && (
+                <div className="data-item">
+                  <IconBrandInstagram />
+                  <a
+                    href={`https://instagram.com/${image.user.instagram_username}`}
+                  >
+                    {`@${image.user.instagram_username}`}
+                  </a>
+                </div>
+              )}
+            </div>
+            <div className="user-actions">
+              <a className="btn" href={image.user.links.html} target="_blank">
+                View author on Unsplash
+              </a>
+              <a className="btn" href={image.links.download} target="_blank">
+                Download Image
+              </a>
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 

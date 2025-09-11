@@ -160,7 +160,7 @@ a:hover {
   gap: 1rem;
 }
 
-.project-header, .project-body {
+.project-header {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -168,14 +168,21 @@ a:hover {
   padding: 3rem;
   gap: 1rem;
 }
-.project-header .project-metadata, .project-body .project-metadata {
+.project-header .project-metadata {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: stretch;
   gap: 0.5rem;
 }
-.project-header .project-title, .project-body .project-title {
+.project-header .project-metadata span {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.project-header .project-title {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -191,6 +198,71 @@ a:hover {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.project-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  padding: 3rem;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  border: solid 1px #E5E7EB;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.project-user .user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-user .user-info .user-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.75rem;
+}
+.project-user .user-info .user-details .user-image {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.project-user .user-extra-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.project-user .user-extra-details .user-analytics {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.project-user .user-extra-details .user-analytics .data-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.25rem;
+}
+.project-user .user-extra-details .user-analytics .data-item svg {
+  width: 1rem;
+}
+.project-user .user-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .btn {
