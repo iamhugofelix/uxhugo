@@ -71,9 +71,7 @@ export default function ProjectDetails() {
 
       <SectionWrapper topBorder={true} bottomBorder={true}>
         <div className="project-user">
-          <h2 className="headings text-dark bold">
-            Author
-          </h2>
+          <h2 className="headings text-dark bold">Author</h2>
           <div className="user-info">
             <div className="user-details">
               <div className="user-image">
@@ -157,7 +155,9 @@ export default function ProjectDetails() {
         </svg>
       </SectionWrapper>
 
-      <ContactSection />
+      <SectionWrapper bottomBorder={true}>
+        <ContactSection />
+      </SectionWrapper>
     </div>
   );
 }
