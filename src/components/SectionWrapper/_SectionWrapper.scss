@@ -14,9 +14,10 @@
 }
 
 .section-content {
-    @include flex(column, center, center);
+    @include flex(column, center, stretch);
     max-width: 43rem;
     margin: auto;
+    width: 100%;
 
     p {
         width: 100%;

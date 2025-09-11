@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.project-header, .project-body {
+    @include flex(column, start, stretch);
+    padding: 3rem;
+    gap: 1rem;
+
+    .project-metadata {
+        @include flex(row, start, stretch);
+        gap: 0.5rem;
+    }
+
+    .project-title {
+        @include flex(column, start, stretch);
+        gap: 0.5rem;
+    }
+
+}
+
+.project-featured-image {
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}

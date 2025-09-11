@@ -4,6 +4,9 @@
 @use "./styles/reset";
 @use "./styles/globals";
 
+//Pages
+@use "./pages/ProjectDetails/ProjectDetails";
+
 
 // Components styles
 @use "./components/Button/Button";

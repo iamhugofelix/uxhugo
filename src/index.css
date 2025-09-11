@@ -160,6 +160,39 @@ a:hover {
   gap: 1rem;
 }
 
+.project-header, .project-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  padding: 3rem;
+  gap: 1rem;
+}
+.project-header .project-metadata, .project-body .project-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.project-header .project-title, .project-body .project-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.project-featured-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .btn {
   display: flex;
   flex-direction: row;
@@ -231,9 +264,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   max-width: 43rem;
   margin: auto;
+  width: 100%;
 }
 .section-content p {
   width: 100%;
@@ -314,6 +348,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  width: 100%;
   padding: 1.5rem 1.5rem 0 1.5rem;
   gap: 1.5rem;
   border: solid 1px #E5E7EB;
@@ -331,6 +366,7 @@ a:hover {
   justify-content: start;
   align-items: start;
   gap: 0.5rem;
+  width: 100%;
 }
 .project-card-content .project-card-metadata {
   display: flex;
@@ -344,8 +380,19 @@ a:hover {
 }
 
 .project-card-image {
-  max-height: 20rem;
+  height: 20rem;
   overflow: hidden;
+  width: 100%;
+  background-color: #E5E7EB;
+}
+.project-card-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .projects-list {

@@ -1,10 +1,9 @@
+import HomeAbout from "../../components/HomeAbout/Homeabout";
+import ProjectsList from "../../components/ProjectsList/ProjectsList";
+import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
+import HomeHero from "../../components/HomeHero/HomeHero";
+import ContactSection from "../../components/ContactSection/ContactSection";
 
-import ContactSection from "../components/ContactSection/ContactSection";
-import Footer from "../components/Footer/Footer";
-import HomeAbout from "../components/HomeAbout/HomeAbout";
-import HomeHero from "../components/HomeHero/HomeHero";
-import ProjectsList from "../components/ProjectsList/ProjectsList";
-import SectionWrapper from "../components/SectionWrapper/SectionWrapper";
 
 export default function Home() {
   return (

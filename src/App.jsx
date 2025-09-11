@@ -1,7 +1,7 @@
 import './index.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router'
-import Home from './pages/Home';
-import ProjectDetails from './pages/ProjectDetails';
+import Home from './pages/Home/Home';
+import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
@@ -14,7 +14,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectDetails />} />
+        <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/projects/:title" element={<ProjectDetails />} />
       </Routes>
 
