@@ -10,7 +10,6 @@ export default function App() {
     <BrowserRouter>
 
       <div className="vertical-lines"></div>
-      <NavBar />
 
       <Routes>
         <Route path="/" element={<Home />} />

@@ -138,6 +138,19 @@ a:hover {
   margin: auto;
 }
 
+.back-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 43rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem 3rem;
+  position: absolute;
+}
+
 .vertical-lines {
   position: fixed;
   top: 0;
@@ -264,6 +277,27 @@ a:hover {
   padding-top: 1rem;
 }
 
+.loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100vw;
+  height: 100vh;
+}
+.loading svg {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 800px) {
   .project-header {
     padding: 3rem 1.5rem;
@@ -382,6 +416,8 @@ a:hover {
 
 .avatar {
   width: 3.5rem;
+  height: 3.5rem;
+  background-color: #F9FAFB;
   border: solid 2px #ffffff;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -540,6 +576,7 @@ a:hover {
   width: 10rem;
   aspect-ratio: 3/4;
   overflow: hidden;
+  background-color: #F9FAFB;
 }
 .photo-card img {
   -o-object-fit: cover;

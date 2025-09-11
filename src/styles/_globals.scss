@@ -81,7 +81,15 @@ a {
     }
 }
 
-
+.back-button {
+    @include flex(column, center, start);
+    @include card-width();
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem 3rem;
+    position: absolute;
+}
 
 .vertical-lines {
   position: fixed;

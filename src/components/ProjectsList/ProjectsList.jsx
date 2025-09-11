@@ -9,7 +9,7 @@ export default function ProjectsList () {
 
   useEffect(() => {
     const getPhotos = async () => {
-      const photos = await fetchRandomPhotos(1, 3);
+      const photos = await fetchRandomPhotos(1, 4);
       setImages(photos);
     };
     getPhotos();
