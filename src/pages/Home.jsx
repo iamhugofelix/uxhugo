@@ -46,9 +46,7 @@ export default function Home() {
             />
           </svg>
         </SectionWrapper>
-        <SectionWrapper topBorder={true} bottomBorder={true}>
           <HomeAbout />
-        </SectionWrapper>
         <SectionWrapper addPadding={true}>
           <svg
             className="arrows"

@@ -14,7 +14,7 @@
 }
 
 .section-content {
-    @include flex(column, center, start);
+    @include flex(column, center, center);
     max-width: 43rem;
     margin: auto;
 

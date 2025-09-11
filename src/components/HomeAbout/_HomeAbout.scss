@@ -6,12 +6,14 @@
     gap: 2rem;
     margin: auto;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 0 3rem 1rem;
 }
 
 .about-content {
-    @include flex();
-    @include text-width();
+    @include flex(column, center, center);
+    @include card-width();
+    padding: 3rem;
+    margin: auto;
     gap: 1rem;
 }
 
@@ -20,8 +22,30 @@
     @include card-width();
     width: 100%;
     margin: auto;
-    padding-top: 6rem;
+    padding: 3rem 0;
     margin-top: -6rem;
-    background: linear-gradient(to top, $gray-50 24%, transparent 100%);
+    background: linear-gradient(to top, $gray-50 64%, transparent 100%);
     z-index: 10;
+}
+
+.read-less {
+    @include flex(column, center, center);
+    @include card-width();
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+}
+
+// Adds a special padding to the bottom photo gallery
+.expanded-bottom{
+    padding-bottom: 0;
+}
+
+.expanded-top{
+    padding-top: 1rem;
+}
+
+.gap-1rem {
+    @include flex(column, center, center);
+    gap: 1rem;;
 }
