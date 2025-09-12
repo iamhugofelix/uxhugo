@@ -13,8 +13,7 @@ The project is being developed with **React** and **Sass**, and follows a design
 ## 🚧 Work in Progress
 This portfolio is under constant development and will evolve over time.  
 For now:
-- Will start by using mock data from the Art Institute of Chicago API
-- Includes basic pages (Home, About, Projects, Project Details)
+- Will start by using mock data from the Unsplash API
 - Will later showcase my real case studies and design work.
 
 Later will be added to this README file...
