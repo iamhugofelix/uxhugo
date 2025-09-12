@@ -311,6 +311,39 @@ a:hover {
     flex-wrap: wrap;
   }
 }
+.not-found-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-page .section-wrapper {
+  width: 100%;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 43rem;
+  padding: 4rem 3rem;
+  gap: 2rem;
+}
+.not-found-content img {
+  max-width: 18rem;
+}
+
+.not-found-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .btn {
   display: flex;
   flex-direction: row;

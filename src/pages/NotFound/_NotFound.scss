@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.not-found-page {
+    height: 100vh;
+    width: 100%;
+    @include flex();
+    
+    .section-wrapper {
+        width: 100%;
+    }
+}
+
+.not-found-content {
+    @include flex();
+    @include card-width;
+    padding: 4rem 3rem;
+    gap: 2rem;
+
+    img {
+        max-width: 18rem;
+    }
+}
+
+.not-found-title{
+    @include flex();
+    gap: 0.5rem;
+}
