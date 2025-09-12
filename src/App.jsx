@@ -6,16 +6,20 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import NotFound from './pages/NotFound/NotFound';
 import ScrollToTop from './services/ScrollToTop';
+import EmptyPage from './pages/Empty/EmptyPage';
+import NotePad from './components/NotePad/NotePad';
 
 export default function App() {
   return (
     <BrowserRouter>
       <div className="vertical-lines"></div>
       <ScrollToTop />
+      <NotePad />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/projects/:id/:slug" element={<ProjectDetails />} />
+        <Route path="/empty" element={<EmptyPage />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -1,0 +1,126 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.notepad {
+    @include flex(column, start, end);
+    gap: 0.5rem;;
+    background-color: #fffbeb;
+    border: solid 1px #fef3c7;
+    border-radius: 0.5rem;
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+
+    &-open {
+        padding: 1rem;
+        width: 20rem;
+        height: 25rem;
+        box-shadow: 0 0 16px 8px rgba(16, 24, 40, 0.04);
+    }
+}
+
+.notepad-header {
+    @include flex(row, space-between, center);
+    width: 100%;
+
+    .open-button{
+    padding: 1rem;
+    }
+
+    .close-button{
+    padding: 0;
+    }
+
+    .notepad-button {
+        @include flex(row);
+        gap: 0.5rem
+        ;
+
+        svg {
+            height: 1rem;
+            width: 1rem;
+        }
+    } 
+}
+
+.notepad-wrapper {
+    @include flex(column, start, stretch);
+    flex: 1;
+    width: 100%;
+    gap: 1rem;
+}
+
+.notepad-textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem 0;
+    border: none;
+    background-color: transparent;
+    cursor: text;
+    resize: none;
+    color: $gray-600;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: rgba($gray-600, 0.8);
+        font-style: italic;
+    }
+}
+
+.notepad-actions {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: text;
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $gray-400;
+        font-style: italic;
+    }
+}
+
+.notepad {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+.notepad-closed {
+  max-height: 2.5rem; // adjust to match your header height
+  opacity: 0.9;
+
+  .notepad-wrapper,
+  .notepad-actions {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.notepad-open {
+  max-height: 25rem; // adjust to your actual open height
+  opacity: 1;
+
+  .notepad-wrapper,
+  .notepad-actions {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+.notepad {
+    bottom: auto;
+    top: 1rem;
+    right: 1rem;
+}
+}
+
+
