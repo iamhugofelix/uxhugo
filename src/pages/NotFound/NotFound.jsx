@@ -7,7 +7,7 @@ export default function NotFound () {
     <div className="not-found-page">
       <SectionWrapper topBorder={true} bottomBorder={true}>
         <div className="not-found-content">
-          <img src="src/assets/images/not-found.png" alt="Pile of paper" />
+          <img src="/images/not-found.png" alt="Pile of paper" />
           <div className="not-found-title">
             <h1 className="text-dark bold">
               Seems like this page didn't make the final cut!
