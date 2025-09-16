@@ -3,14 +3,13 @@ import { useEffect, useRef, useState } from "react";
 
 export default function NotePad () {
 const [isOpen, setIsOpen] = useState(false);
-const [notes, SetNotes] = useState('');
+const [notes, setNotes] = useState('');
 const notepadRef = useRef(null);
-const mailtoBody = encodeURIComponent(notes)
 
 // Load Notes from local storage
 useEffect(() => {
     const savedNotes = localStorage.getItem('VisitorNotes')
-    savedNotes && SetNotes(savedNotes);
+    savedNotes && setNotes(savedNotes);
 }, [] )
 
 // Save the content of the textarea to localstorage
@@ -35,6 +34,16 @@ useEffect (() => {
 
 }, [isOpen])
 
+// Handling email sending
+const sendToEmail = () => {
+  const subject = encodeURIComponent("Notes from Hugo Felix Portfolio");
+  const body = encodeURIComponent(notes);
+  const mailtoLink = `mailto:?subject=${subject}&body=${body}`;
+  window.location.href = mailtoLink;
+}
+
+
+
   return (
     <div ref={notepadRef} className={`notepad ${isOpen ? "notepad-open" : ""}`}>
       <div className={`notepad-header ${!isOpen ? "notepad-close" : ""}`}>
@@ -42,7 +51,7 @@ useEffect (() => {
           {!isOpen ? "" : "Notepad"}
         </span>
 
-        <a
+        <button
           onClick={() => {
             return setIsOpen(!isOpen);
           }}
@@ -50,18 +59,14 @@ useEffect (() => {
             isOpen ? "notepad-button--close" : "notepad-button--open"
           }`}
         >
-
-        {!isOpen ? (
+          {!isOpen ? (
             <>
-              <PencilLine />{" "}
-              <span className="text-dark">Open Notepad</span>
+              <PencilLine /> <span className="text-dark">Open Notepad</span>
             </>
           ) : (
             <XIcon />
-        )}
-
-        </a>
-
+          )}
+        </button>
       </div>
 
       {isOpen && (
@@ -69,7 +74,7 @@ useEffect (() => {
           <textarea
             className="notepad-textarea"
             value={notes}
-            onChange={(e) => SetNotes(e.target.value)}
+            onChange={(e) => setNotes(e.target.value)}
             placeholder="Type your notes..."
             autoFocus
           ></textarea>
@@ -78,14 +83,14 @@ useEffect (() => {
 
       {isOpen && (
         <div className="notepad-actions">
-          <a
-            href={`mailto:hugofelix.91@gmail.com?subject=Notes%20from%20Hugo%20Felix&body=${mailtoBody}`}
+          <button
+            onClick={sendToEmail}
             className="btn btn-sm btn-yellow"
             target="_blank"
             rel="noopener noreferrer"
           >
             Send by email
-          </a>
+          </button>
         </div>
       )}
     </div>

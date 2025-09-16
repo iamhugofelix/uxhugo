@@ -916,6 +916,10 @@ a:hover {
   overflow: hidden;
   transition: max-height 0.35s ease, opacity 0.25s ease;
 }
+.notepad button {
+  all: unset;
+  cursor: pointer;
+}
 .notepad-open {
   padding: 1rem;
   width: 20rem;
@@ -936,11 +940,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  height: 3.25rem;
 }
 .notepad-header .notepad-button--open {
   min-width: 3.25rem;
-  padding: 1rem;
+  padding: 0.5rem 0.75rem;
 }
 .notepad-header .notepad-button--close {
   padding: 0;
