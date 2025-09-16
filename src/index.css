@@ -510,9 +510,6 @@ a:hover {
   background-color: #E5E7EB;
   align-self: stretch;
 }
-.copy-button .success {
-  color: #00BC7D;
-}
 
 .project-card-wrapper {
   display: flex;
@@ -1023,7 +1020,7 @@ a:hover {
 }
 .footer-wrapper svg {
   width: 100%;
-  max-width: 8rem;
+  max-width: 6rem;
 }
 
 .footer-content {

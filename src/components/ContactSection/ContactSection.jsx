@@ -8,22 +8,17 @@ export default function ContactSection () {
       <div className="contact-section">
         <div className="contact-content">
           <h1 className="bold text-dark">
-            I’m Hugo, a digital product designer, curious builder, and
-            occasional front-end dabbler.{" "}
+            Thanks for scrolling all the way down.{" "}
             <span className="heading regular text-light">
-              Always trying to design stuff that get people go “yep, this is
-              cool.”
+              If you’d like to connect, talk design, or share an idea, just
+              reach out.
             </span>
           </h1>
           <p>
-            Originally from Portugal, currently designing at{" "}
-            <Link to="https://prezly.com">Prezly</Link>, and spending my free
-            time{" "}
-            <Link to="https://github.com/iamhugofelix">
-              learning how to code
-            </Link>
-            . Since 2015, I’ve designed for SaaS platforms, e-commerce brands,
-            and physical products.
+            Let’s keep the conversation going. Email works best, but you’ll also
+            find me on social if that’s more your style. I’m always open to
+            feedback, new ideas, or just a friendly hello—don’t hesitate to get
+            in touch.
           </p>
         </div>
         <div className="contact-actions">

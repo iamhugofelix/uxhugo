@@ -12,7 +12,7 @@ export default function CopyToClipboard ({text}) {
     <div className="copy-button text-md">
         <span>hey@uxhugo.com</span>
         <div className="divider"></div>
-        <a className={`text-md ${copied ? 'success' : ''}`} onClick={() => {copyText(text)}}>
+        <a className='text-md' onClick={() => {copyText(text)}}>
             {copied ? 'Copied' : 'Copy email'}
         </a>
 
