@@ -375,17 +375,14 @@ a:hover {
   color: #111827;
 }
 .btn-yellow {
-  padding: 0.75rem;
-  height: 2rem;
   border: none;
-  border-radius: 0.25rem;
   border: solid 1px #fef3c7;
   background: #fef3c7;
   color: #111827;
   box-shadow: none;
 }
 .btn-yellow:hover {
-  background-color: rgba(253, 230, 138, 0.5019607843);
+  background-color: rgba(253, 230, 138, 0.2509803922);
 }
 
 .nav-bar {
@@ -916,9 +913,11 @@ a:hover {
   border-radius: 0.5rem;
   transition: all 0.4s ease-in-out;
   position: fixed;
-  bottom: 1.5rem;
+  top: 1.5rem;
   right: 1.5rem;
   z-index: 1000;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 .notepad-open {
   padding: 1rem;
@@ -934,18 +933,21 @@ a:hover {
   align-items: center;
   width: 100%;
 }
-.notepad-header .open-button {
-  padding: 1rem;
-}
-.notepad-header .close-button {
-  padding: 0;
-}
 .notepad-header .notepad-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  height: 3.25rem;
+}
+.notepad-header .notepad-button--open {
+  min-width: 3.25rem;
+  padding: 1rem;
+}
+.notepad-header .notepad-button--close {
+  padding: 0;
+  height: 0;
 }
 .notepad-header .notepad-button svg {
   height: 1rem;
@@ -1003,35 +1005,9 @@ a:hover {
   font-style: italic;
 }
 
-.notepad {
-  overflow: hidden;
-  transition: max-height 0.35s ease, opacity 0.25s ease;
-}
-
-.notepad-closed {
-  max-height: 2.5rem;
-  opacity: 0.9;
-}
-.notepad-closed .notepad-wrapper,
-.notepad-closed .notepad-actions {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.notepad-open {
-  max-height: 25rem;
-  opacity: 1;
-}
-.notepad-open .notepad-wrapper,
-.notepad-open .notepad-actions {
-  opacity: 1;
-}
-
 @media (max-width: 800px) {
   .notepad {
-    bottom: auto;
-    top: 1rem;
-    right: 1rem;
+    display: none;
   }
 }
 .footer-wrapper {

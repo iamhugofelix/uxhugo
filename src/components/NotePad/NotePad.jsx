@@ -5,6 +5,7 @@ export default function NotePad () {
 const [isOpen, setIsOpen] = useState(false);
 const [notes, SetNotes] = useState('');
 const notepadRef = useRef(null);
+const mailtoBody = encodeURIComponent(notes)
 
 // Load Notes from local storage
 useEffect(() => {
@@ -27,9 +28,11 @@ useEffect (() => {
         }
     }
     document.addEventListener("mousedown", checkClickOutside);
+    
     return () => {
       document.removeEventListener("mousedown", checkClickOutside);
     };
+
 }, [isOpen])
 
   return (
@@ -44,17 +47,21 @@ useEffect (() => {
             return setIsOpen(!isOpen);
           }}
           className={`notepad-button ${
-            isOpen ? "close-button" : "open-button"
+            isOpen ? "notepad-button--close" : "notepad-button--open"
           }`}
         >
-          {!isOpen ? (
+
+        {!isOpen ? (
             <>
-              <PencilLine /> <span className="mobile-hide">Want to take some notes?</span>
+              <PencilLine />{" "}
+              <span className="text-dark">Open Notepad</span>
             </>
           ) : (
             <XIcon />
-          )}
+        )}
+
         </a>
+
       </div>
 
       {isOpen && (
@@ -64,15 +71,21 @@ useEffect (() => {
             value={notes}
             onChange={(e) => SetNotes(e.target.value)}
             placeholder="Type your notes..."
+            autoFocus
           ></textarea>
         </div>
       )}
 
       {isOpen && (
         <div className="notepad-actions">
-          <button href="#" className="btn btn-sm btn-yellow">
+          <a
+            href={`mailto:hugofelix.91@gmail.com?subject=Notes%20from%20Hugo%20Felix&body=${mailtoBody}`}
+            className="btn btn-sm btn-yellow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Send by email
-          </button>
+          </a>
         </div>
       )}
     </div>

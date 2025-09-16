@@ -9,9 +9,11 @@
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
     position: fixed;
-    bottom: 1.5rem;
+    top: 1.5rem;
     right: 1.5rem;
     z-index: 1000;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
 
     &-open {
         padding: 1rem;
@@ -25,19 +27,21 @@
     @include flex(row, space-between, center);
     width: 100%;
 
-    .open-button{
-    padding: 1rem;
-    }
-
-    .close-button{
-    padding: 0;
-    }
-
     .notepad-button {
-        @include flex(row);
-        gap: 0.5rem
-        ;
+        @include flex(row, center, center);
+        gap: 0.5rem;
+        height: 3.25rem;
 
+        &--open{
+            min-width: 3.25rem;
+            padding:1rem;
+        }
+
+        &--close{
+            padding: 0;
+            height: 0;
+        }
+        
         svg {
             height: 1rem;
             width: 1rem;
@@ -89,38 +93,8 @@
     }
 }
 
-.notepad {
-  overflow: hidden;
-  transition: max-height 0.35s ease, opacity 0.25s ease;
-}
-
-.notepad-closed {
-  max-height: 2.5rem; // adjust to match your header height
-  opacity: 0.9;
-
-  .notepad-wrapper,
-  .notepad-actions {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-.notepad-open {
-  max-height: 25rem; // adjust to your actual open height
-  opacity: 1;
-
-  .notepad-wrapper,
-  .notepad-actions {
-    opacity: 1;
-  }
-}
-
 @media (max-width: 800px) {
-.notepad {
-    bottom: auto;
-    top: 1rem;
-    right: 1rem;
+    .notepad {
+        display: none;
+    }
 }
-}
-
-

@@ -1,8 +1,7 @@
 import './index.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router'
-import Home from './pages/Home/Home';
+import Home from './pages/Homepage/Home';
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
-import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import NotFound from './pages/NotFound/NotFound';
 import ScrollToTop from './services/ScrollToTop';
