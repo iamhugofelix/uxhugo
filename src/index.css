@@ -899,6 +899,16 @@ a:hover {
     border-left: none;
   }
 }
+.notepad-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  flex: 1;
+  width: 100%;
+  gap: 1rem;
+}
+
 .notepad {
   display: flex;
   flex-direction: column;
@@ -916,10 +926,6 @@ a:hover {
   overflow: hidden;
   transition: max-height 0.35s ease, opacity 0.25s ease;
 }
-.notepad button {
-  all: unset;
-  cursor: pointer;
-}
 .notepad-open {
   padding: 1rem;
   width: 20rem;
@@ -933,6 +939,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.notepad-header button {
+  all: unset;
+  cursor: pointer;
 }
 .notepad-header .notepad-button {
   display: flex;
@@ -952,16 +962,6 @@ a:hover {
 .notepad-header .notepad-button svg {
   height: 1rem;
   width: 1rem;
-}
-
-.notepad-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
-  flex: 1;
-  width: 100%;
-  gap: 1rem;
 }
 
 .notepad-textarea {

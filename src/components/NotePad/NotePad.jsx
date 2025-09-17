@@ -35,11 +35,24 @@ useEffect (() => {
 }, [isOpen])
 
 // Handling email sending
-const sendToEmail = () => {
-  const subject = encodeURIComponent("Notes from Hugo Felix Portfolio");
-  const body = encodeURIComponent(notes);
-  const mailtoLink = `mailto:?subject=${subject}&body=${body}`;
-  window.location.href = mailtoLink;
+// const sendToEmail = () => {
+//   const subject = encodeURIComponent("Notes from Hugo Felix Portfolio");
+//   const body = encodeURIComponent(notes);
+//   const mailtoLink = `mailto:?subject=${subject}&body=${body}`;
+
+//   window.location.href = mailtoLink;
+// }
+
+const downloadNotes = () => {
+  const blob = new Blob([notes], {type: 'text/plain'})
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "hugo-felix-portfolio-notes.txt";
+  link.click();
+
+  URL.revokeObjectURL(url);
 }
 
 
@@ -84,12 +97,12 @@ const sendToEmail = () => {
       {isOpen && (
         <div className="notepad-actions">
           <button
-            onClick={sendToEmail}
+            onClick={downloadNotes}
             className="btn btn-sm btn-yellow"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Send by email
+            Download Notes
           </button>
         </div>
       )}

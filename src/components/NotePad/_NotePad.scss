@@ -1,6 +1,13 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+.notepad-wrapper {
+    @include flex(column, start, stretch);
+    flex: 1;
+    width: 100%;
+    gap: 1rem;
+}
+
 .notepad {
     @include flex(column, start, end);
     gap: 0.5rem;;
@@ -15,11 +22,6 @@
     overflow: hidden;
     transition: max-height 0.35s ease, opacity 0.25s ease;
 
-    button {
-        all: unset;
-        cursor: pointer;
-    }
-
     &-open {
         padding: 1rem;
         width: 20rem;
@@ -31,6 +33,12 @@
 .notepad-header {
     @include flex(row, space-between, center);
     width: 100%;
+
+    button {
+        all: unset;
+        cursor: pointer;
+    }
+
 
     .notepad-button {
         @include flex(row, center, center);
@@ -51,13 +59,6 @@
             width: 1rem;
         }
     } 
-}
-
-.notepad-wrapper {
-    @include flex(column, start, stretch);
-    flex: 1;
-    width: 100%;
-    gap: 1rem;
 }
 
 .notepad-textarea {
