@@ -11,9 +11,13 @@ The project is being developed with **React** and **Sass**, and follows a design
 ---
 
 ## 🚧 Work in Progress
-This portfolio is under constant development and will evolve over time.  
-For now:
-- Will start by using mock data from the Unsplash API
-- Will later showcase my real case studies and design work.
-
-Later will be added to this README file...
+This portfolio is under constant development and will evolve over time. Here are some things that I will to do next:
+✅ Improve the copy on the homepeage
+⏳ Clean up scss files
+☑️ Better animations for components
+☑️ Add tooltips to icon-only buttons
+☑️ Improve pages SEO (if possible)
+☑️ Add sharing images and og information
+☑️ Update CV file
+☑️ Link to real case studies
+☑️ Connect to uxhugo.com domain
